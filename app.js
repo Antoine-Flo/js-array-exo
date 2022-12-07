@@ -1,4 +1,4 @@
-const data = require("./data.json");
+const usersList = require("./data.json");
 const fs = require("fs");
 
 const FILE_NAME = "bronze";
@@ -8,12 +8,8 @@ const FILE_NAME = "bronze";
 
 // Example :
 // keep only the id and the username
-const result = data.map((x) => {
-  return {
-    id: x.id,
-    username: x.username,
-  };
-});
+
+const result = usersList.filter((user) => user.subscription.plan === "Bronze");
 
 fs.writeFile(`./results/${FILE_NAME}.json`, JSON.stringify(result), (err) => {
   if (err) {
