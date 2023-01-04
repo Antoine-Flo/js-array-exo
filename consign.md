@@ -6,7 +6,7 @@ Filter all user with a bronze subscription
 
 ## avatarId
 
-For each user, keep ony the "id" and the avatar Id, example :
+For each user, keep only the "id" and the avatar Id, example :
 For this avatar URL :
 "https://robohash.org/utodioarchitecto.png?size=300x300\u0026set=set1"
 the id is : utodioarchitecto.
